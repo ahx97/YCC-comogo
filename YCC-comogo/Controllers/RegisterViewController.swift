@@ -73,14 +73,19 @@ class RegisterViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func registerClick(_ sender: Any) {
+        //check that email and password are the same and match
+        if(passwordBtn.text == ""   && emailBtn.text == "" && passawordBtn2.text == "" && emailBtn2 == ""){
+            // the text fields are not all filled out
+            //return an error to alert that they need to fill in all fields
+        }
+        
+        if(passwordBtn.isEqual(passwordBtn2) && emailBtn.isEqual(emailBtn2)){
+            //this should decide if the they entered correc data.
+        }
+        
     }
-    */
+    
+    
 
 }

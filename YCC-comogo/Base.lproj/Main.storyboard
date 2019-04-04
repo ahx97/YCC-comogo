@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DgJ-CN-0Zx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DgJ-CN-0Zx">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -240,6 +240,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Register"/>
                                         <connections>
+                                            <action selector="registerClick:" destination="BS2-jN-zXg" eventType="touchUpInside" id="m6b-wY-Skd"/>
                                             <segue destination="NPC-HH-qmc" kind="show" id="D0k-Ik-AoS"/>
                                         </connections>
                                     </button>
@@ -460,7 +461,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5w-hD-G8Z">
-                                <rect key="frame" x="20" y="708" width="180" height="62"/>
+                                <rect key="frame" x="20" y="748" width="180" height="22"/>
                                 <color key="backgroundColor" red="0.78648656606674194" green="0.56096486261054368" blue="0.51703314531154021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" image="close-circle">
                                     <color key="titleColor" red="0.83334682642487046" green="0.0" blue="0.0097042457783360417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -475,7 +476,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfD-bY-v1C">
-                                <rect key="frame" x="214" y="708" width="180" height="62"/>
+                                <rect key="frame" x="214" y="748" width="180" height="22"/>
                                 <color key="backgroundColor" red="0.67846269930000003" green="0.78648656610000001" blue="0.5767667863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" image="heart (2)">
                                     <color key="titleColor" red="0.28826775214620304" green="0.91299391276945319" blue="0.17520856506963209" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -520,7 +521,7 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3oR-kS-F5x">
-                                <rect key="frame" x="0.0" y="397" width="414" height="306"/>
+                                <rect key="frame" x="0.0" y="397" width="414" height="346"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1020,14 +1021,14 @@
     <resources>
         <image name="RBHS" width="300" height="168"/>
         <image name="close-circle" width="62" height="62"/>
-        <image name="comogo" width="312" height="182"/>
+        <image name="comogo" width="624" height="364"/>
         <image name="e1" width="1170" height="878"/>
-        <image name="email" width="256" height="256"/>
+        <image name="email" width="512" height="512"/>
         <image name="heart (2)" width="62" height="62"/>
-        <image name="password" width="491.51998901367188" height="491.51998901367188"/>
+        <image name="password" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mhL-Do-QbE"/>
+        <segue reference="D0k-Ik-AoS"/>
         <segue reference="RXn-IL-bit"/>
     </inferredMetricsTieBreakers>
 </document>
