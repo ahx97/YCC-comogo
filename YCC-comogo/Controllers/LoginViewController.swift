@@ -19,10 +19,21 @@ class LoginViewController: UIViewController {
     
     @IBAction func login(_ sender: Any) {
         
-        let request = ApiRequest()
-        let user = UserCreds.init(email: "dwlockster@gmail.com", password: "test123")
-        let data = try! encoder.encode(user)
-        request.execute(http_method: HTTPMethod.post, url_path: "auth/login", payload: data)
+        if let email = email.text{
+            if let password = password.text{
+                let request = ApiRequest()
+                let user = UserCreds.init(email: email, password: password)
+                let data = try! encoder.encode(user)
+                request.execute(http_method: HTTPMethod.post, url_path: "auth/login", payload: data)
+                performSegue(withIdentifier: "login", sender: self)
+            }
+        }
+        
+//        let request = ApiRequest()
+//        let user = UserCreds.init(email: "dwlockster@gmail.com", password: "test123")
+//        let data = try! encoder.encode(user)
+//        request.execute(http_method: HTTPMethod.post, url_path: "auth/login", payload: data)
+//        performSegue(withIdentifier: "login", sender: self)
     }
     
     override func viewDidLoad() {

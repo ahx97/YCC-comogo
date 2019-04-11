@@ -75,10 +75,10 @@ class RegisterViewController: UIViewController {
 
     @IBAction func registerClick(_ sender: Any) {
         //check that email and password are the same and match
-        if(passwordBtn.text == ""   && emailBtn.text == "" && passawordBtn2.text == "" && emailBtn2 == ""){
+       // if(passwordBtn.text == ""   && emailBtn.text == "" && passawordBtn2.text == "" && emailBtn2 == ""){
             // the text fields are not all filled out
             //return an error to alert that they need to fill in all fields
-        }
+       // }
         
         if(passwordBtn.isEqual(passwordBtn2) && emailBtn.isEqual(emailBtn2)){
             //this should decide if the they entered correc data.
