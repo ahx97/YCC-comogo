@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DgJ-CN-0Zx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DgJ-CN-0Zx">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1020,11 +1020,11 @@
     <resources>
         <image name="RBHS" width="300" height="168"/>
         <image name="close-circle" width="62" height="62"/>
-        <image name="comogo" width="312" height="182"/>
+        <image name="comogo" width="624" height="364"/>
         <image name="e1" width="1170" height="878"/>
-        <image name="email" width="256" height="256"/>
+        <image name="email" width="512" height="512"/>
         <image name="heart (2)" width="62" height="62"/>
-        <image name="password" width="491.51998901367188" height="491.51998901367188"/>
+        <image name="password" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="mhL-Do-QbE"/>

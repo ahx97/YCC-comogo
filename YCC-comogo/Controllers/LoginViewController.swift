@@ -23,6 +23,7 @@ class LoginViewController: UIViewController {
         let user = UserCreds.init(email: "dwlockster@gmail.com", password: "test123")
         let data = try! encoder.encode(user)
         request.execute(http_method: HTTPMethod.post, url_path: "auth/login", payload: data)
+        //need to push the user ID to the next page (HomePageViewController) then on liked events send an API request to add event ID to the user.events
     }
     
     override func viewDidLoad() {
